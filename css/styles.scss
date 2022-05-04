@@ -572,7 +572,6 @@ input[type="range"]::-webkit-slider-thumb {
   position: relative;
   width: 4rem;
   height: auto;
-
   &:hover {
     transform: scale(1.1);
   }
@@ -1078,22 +1077,20 @@ height: 35rem;}
 
   .right-content {
     position: relative;
-    top: 4rem;
-    left: -2rem;
+    top: 2.9rem;
+    left: -4rem;
   }
 
   .bottom-logo {
-    width: 40%;
+    width: 35%;
   }
 
   .footer-text {
-    width: 30%;
+    width: 29%;
   }
 
   .pay-row {
     position: relative;
-    top: -4rem;
-    left: -2rem;
   }
 
   .pay-image {
