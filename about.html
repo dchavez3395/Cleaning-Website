@@ -1,110 +1,124 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
 <head>
   <meta charset="utf-8">
   <title>Maria & Stan</title>
-  <!-- CSS Stylesheets -->
+  <!-- CSS Styles -->
+  <link rel="stylesheet" href="styles.min.css">
+  <!--Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/styles.min.css">
-  <!-- bootstrap script -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   <!-- Font Awesome -->
-  <script src="https://kit.fontawesome.com/15670690c5.js" crossorigin="anonymous"></script>
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous"
+    referrerpolicy="no-referrer">
 </head>
-
-<body>
-
-  <!-- Nav Bar -->
-
-  <nav class=" navbar navbar-expand-lg navbar-light " id="nav-area">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">
-        <img class="logo" src="images/logo.png" alt="">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="hamburger navbar-toggler-icon">
-          <img src="hamburger.png" alt="">
-        </span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto ">
-          <li class="nav-item">
-            <a class="nav-link active" style="color:#4D96FF;" aria-current="page" href="home.html">Home</a>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar fixed-top">
+      <div class="navbar-container">
+        <div class="nav-logo">
+          <a href="index.html" id="navbar-logo">
+            <img class="logo" src="images/logo.png" alt="">
+          </a>
+        </div>
+        <div class="navbar-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar-menu">
+          <li class="navbar-item">
+            <a href="home.html" class="navbar-links " id="home-page">Home</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" style="color:#4D96FF;" href="commercial.html">Commercial</a>
+          <li class="navbar-item">
+            <a href="commercial.html" class="navbar-links" id="about-page">Commercial</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" style="color:#4D96FF;" href="construction.html">Construction</a>
+          <li class="navbar-item">
+            <a href="construction.html" class="navbar-links" id="skills-page">Construction</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" style="color:#4D96FF;" href="about.html">About</a>
+          <li class="navbar-item">
+            <a href="about.html" class="navbar-links active" id="projects-page">About</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link"  style="color:#4D96FF;" href="contact.html">Contact</a>
+          <li class="navbar-item">
+            <a href="contact.html" class="navbar-links" id="contact-page">Contact</a>
           </li>
-
         </ul>
-
       </div>
-    </div>
-  </nav>
+    </nav>
 
-  <section id="about">
-    <img src="images/about.jfif" class="about-photo" alt="">
-    <div class="container-fluid about-container">
-      <div class="about-commercial">
-        <h2 class="bottom-title">About Us</h2>
-        <p class="about-area-text">Who We Are</p>
-      </div>
-      <div class="row about-row">
-        <p class="commercial-text">We are a family owned business with over 20 years of experience. Doing our part to Keep Brandon Clean. </p>
-        <p class="commercial-text">Get in touch today for a custom price. No matter what you need to have cleaned, Maria & Stan Cleaning Services can help you out.
-        <p class="commercial-text">Maria & Stan Cleaning and Maid Service Crews can quickly arrive at your home for a one-time cleaning. You can also discuss and schedule Cleaning Services or Maid Services on an ongoing basis – always at reasonable
-          prices.</p>
-      </div>
-    </div>
-
-  </section>
-
-  <section id="about-dog" class="about-dog">
-    <div class="pet-writing">
-      <h1 class="pet-title ">Maria & Stan Cleaning</h1>
-      <h3 class="middle-text-pet">Get In Touch </h3>
-      <div class="bottom-pet-area">
-        <div class="pet-row">
-          <h2 class="quality-title pet-bottom-title ">Quality Cleaning</h2>
-          <p class="about-content pet-content ">Trust in us for reliable, punctual home cleaning services. Meeting your needs is always the number one priority of our fully insured and bonded cleaning company. We provide all cleaning supplies and equipment.</p>
+    <div class="image-top-section">
+      <div class="about-writing">
+        <h2 class="middle-title">About Us</h2>
+        <h3 class="middle-text-about">Who We Are</h3>
+        <p>We are a family owned business with over 20 years of experience. Doing our part to Keep Brandon Clean. Providing quality and afforadble cleaning services to the Brandon area is what we love!</p>
+          <p>E-mail us for a custom estimate. No matter what you need to have cleaned, Maria & Stan Cleaning Services can help you out.</p>
+          <p>We can quickly arrive at your home for a one-time cleaning. You can also discuss and schedule Cleaning Services or Maid Services on an ongoing basis  – always at reasonable prices.Maria & Stan Cleaning Service.</p>
+          <p>We work with Homeowners, Condominium Owners, Apartment Owners and Tenants, Property Managers, Real Estate Professionals, Business Owners, Commercial Real Estate Owners and Managers, Home Builders and Residential and Commercial Construction Crews.</p>
         </div>
-        </div>
-        <a href="contact.html">
-          <button type="button" class="intro-btn  btn btn-light btn-lg" name="button">Schedule your Clean now</button>
-        </a>
 
-      </div>
     </div>
 
+    <!-- break -->
 
-  </section>
+    <div id="dog-section">
+      <div class="pet-writing">
+        <h1 class="pet-title">Maria & Stan Cleaning</h1>
+        <h3 class="middle-text-pet">Your Source For Expert Cleaning Services</h3>
+        <div class="bottom-pet-area">
+          <div class="pet-row">
+            <h2 class="pet-bottom-title">Quality House Cleaning</h2>
+            <p class="pet-content">Rely on us for high-quality house cleaning that leaves every nook and cranny of your home spotless. We are proud to offer everything from new construction cleanups to laundry and housekeeping services.</p>
+          </div>
+          <div class="pet-row">
+            <h2 class="pet-bottom-title">Regular House Cleaning</h2>
+            <p class="pet-content">
+              Most of our customers prefer regular visits from our residential housekeepers.  And we offer weekly, bi-week and once a month services, and can also custom make a program that works for you.
+            </p>
+          </div>
+            <div class="pet-row">
+              <div class="pet-bottom-title">Occasional House Cleaning</div>
+              <p class="pet-content">Our customers also schedules a one-time cleaning based on their needs. And whether they’re expecting company, hosting a party, or getting their place ready for sale or rental,  our  cleaning service gets their home in tip-top shape.</p>
+            </div>
+          </div>
+          <button class="main-btn dog-btn"><a href="resume.PDF" target="_blank">Schedule Clean</a></button>
+        </div>
+    </div>
 
+  <!-- footer -->
 
-  <section id="footer">
-    <div class=" footer-content container-fluid">
+    <div id="footer">
       <div class="right-content">
         <img class="bottom-logo" src="images/logo2.png" alt="">
         <p class="footer-text">We are a family-based business with years of experience cleaning homes and businessess in the Brandon area, and we can't wait to help you keep your place clean!</p>
-     <div class="pay-row row">
-        <img class="pay-image" src="images/visa.png" alt="">
-        <img class="pay-image" src="images/mastercard.png" alt="">
-        <img class="pay-image " src="images/paypal.png" alt="">
-        <img class="pay-image" src="images/bitcoin.png" alt="">
-      </div>
+  <ul class="pay-list">
+    <li>
+      <img class="pay-image" src="images/visa.png" alt="">
+    </li>
+    <li>
+      <img class="pay-image" src="images/mastercard.png" alt="">
+    </li>
+    <li>
+      <img class="pay-image " src="images/paypal.png" alt="">
+    </li>
+    <li>
+      <img class="pay-image" src="images/bitcoin.png" alt="">
+    </li>
+  </ul>
     </div>
-  </section>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="index.js" charset="utf-8"></script>
-</body>
+    </div>
 
-</html>
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="index.js" charset="utf-8"></script>
+  </body>
+
+  </html>
