@@ -83,13 +83,18 @@ $boxShadow: 0 3px 10px rgba(0, 0, 0, 0.3);
   justify-content: space-between;
   height: 80px;
   z-index: 1;
+  border-radius: 0;
   width: 100%;
   max-width: 1300px;
   margin: 0 auto;
-  padding: 0 50px;
+  padding: 0 10px;
+  position: relative;
+  bottom: 1rem;
 
   a {
     cursor: pointer;
+    font-size: 2rem;
+    font-weight: 600;
   }
 }
 
@@ -99,7 +104,6 @@ $boxShadow: 0 3px 10px rgba(0, 0, 0, 0.3);
 
   img {
     position: relative;
-    bottom: 0.5rem;
     cursor: pointer;
   }
 }
@@ -107,7 +111,6 @@ $boxShadow: 0 3px 10px rgba(0, 0, 0, 0.3);
 .nav-logo {
   position: relative;
   width: fit-content;
-  margin-top: 2px;
 }
 
 .navbar-menu {
@@ -115,14 +118,15 @@ $boxShadow: 0 3px 10px rgba(0, 0, 0, 0.3);
   align-items: center;
   list-style: none;
   position: relative;
-  top: 2rem;
+  top: 3.5rem;
 }
 
 .navbar-item {
   height: 80px;
   width: 50%;
   a{
-    margin-bottom: 1rem;
+    font-size: 1.3rem;
+
   }
 }
 
@@ -133,6 +137,8 @@ $boxShadow: 0 3px 10px rgba(0, 0, 0, 0.3);
   margin-right: 5%;
   justify-content: center;
   width: 125px;
+  margin-left:20px;
+  margin-right:20px;
   text-decoration: none;
   height: 70%;
   transition: all 0.3s ease;
@@ -144,8 +150,9 @@ $boxShadow: 0 3px 10px rgba(0, 0, 0, 0.3);
       -webkit-border-radius: 3em;
       -ms-border-radius: 3em;
       border-radius: 3em;
-      padding: 1em 1.6em 0.7em;
-      padding: 3%;
+      padding-left: 40%;
+      padding-right: 40%;
+
   }
 }
 
@@ -155,16 +162,15 @@ $boxShadow: 0 3px 10px rgba(0, 0, 0, 0.3);
 }
 
 .logo {
-  width: 43%;
+  width: 60%;
   position: relative;
   display: flex;
   align-items: center;
-  margin-bottom: 8%;
+  bottom: 4.4rem;
 }
 
 .nav-logo a {
   position: relative;
-  bottom: 4.3rem;
 }
 
 .active{
@@ -173,8 +179,8 @@ $boxShadow: 0 3px 10px rgba(0, 0, 0, 0.3);
     -webkit-border-radius: 3em;
     -ms-border-radius: 3em;
     border-radius: 3em;
-    padding: 1em 1.6em 0.7em;
-    padding: 3%;
+    padding-left: 40%;
+    padding-right: 40%;
 }
 
 
@@ -193,6 +199,7 @@ $boxShadow: 0 3px 10px rgba(0, 0, 0, 0.3);
   margin: 7.2% auto 0;
   transition: all 0.5s ease-in-out;
   background: $navBlue;
+
 }
 
 .carousel-image {
@@ -608,6 +615,8 @@ $boxShadow: 0 3px 10px rgba(0, 0, 0, 0.3);
   -webkit-font-smoothing: antialiased;
   -ms-word-wrap: break-word;
   word-wrap: break-word;
+
+
 }
 
 .pet-title {
@@ -792,10 +801,31 @@ $boxShadow: 0 3px 10px rgba(0, 0, 0, 0.3);
   margin: auto;
   padding: 5%;
 
-  .main-btn {
-    width: 50%;
-    margin-top: 5%;
-  }
+.bottom-btn{
+  font-size: 1.8rem;
+    background: #D45D79;
+    text-decoration: none;
+    padding: 15px 50px;
+    border: none;
+    border-radius: 120px;
+    margin-top: 2rem;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.35s;
+    outline: none;
+    bottom: 2rem;
+    a{
+      text-decoration: none;
+      color: white;
+    }
+
+    &:hover {
+      color: #fff;
+      background: $brightBlue;
+      transition: all 0.35s;
+      transform: scale(1.1);
+    }
+}
 
   p {
     font-size: 1.3rem;
@@ -814,6 +844,10 @@ $boxShadow: 0 3px 10px rgba(0, 0, 0, 0.3);
   font-size: 2rem;
   margin-bottom: 5%;
 }
+
+
+
+
 //About
 
 
@@ -998,14 +1032,16 @@ color: #248275;
 
 
 @media (max-width: 1028px) {
+
   .navbar-container {
     display: flex;
     justify-content: space-between;
-    height: 80px;
+    height: 120px;
     z-index: 1;
     width: 100%;
     max-width: 1300px;
     padding: 0;
+    bottom: 20px;
   }
 
   .navbar-menu {
@@ -1022,7 +1058,6 @@ color: #248275;
     opacity: 1;
     transition: all 0.5s ease;
     z-index: -1;
-
   }
 
   .active{
@@ -1041,6 +1076,10 @@ color: #248275;
 
   .navbar-item {
     width: 100%;
+
+    a{
+      font-size: 2rem;
+    }
   }
 
   .navbar-links {
@@ -1048,11 +1087,10 @@ color: #248275;
     padding: 2rem;
     width: 100%;
     display: table;
-    font-size: 1.6rem;
-
         &:hover{
           border: hidden;
         }
+
   }
 
   #mobile-menu {
@@ -1063,12 +1101,14 @@ color: #248275;
   }
 
   .navbar-toggle .bar {
-    width: 35px;
-    height: 4px;
+    width: 53px;
+    height: 6px;
     margin: 5px auto;
     transition: all 0.3s ease-in-out;
     background: $brightBlue;
     display: block;
+    margin-top: 15%;
+    top: 4px;
     cursor: pointer;
     position: relative;
     right: 10px;
@@ -1077,9 +1117,9 @@ color: #248275;
   #navbar-logo img {
     position: relative;
     cursor: pointer;
-    margin-top: auto;
+    margin-top: 1%;
     margin-left: 4%;
-    width: 22%;
+    width: 25%;
     height: auto;
   }
 
@@ -1088,11 +1128,11 @@ color: #248275;
   }
 
   #mobile-menu.is-active .bar:nth-child(1) {
-    transform: translateY(8px) rotateX(45deg);
+    transform: translateY(14px) rotateX(45deg);
   }
 
   #mobile-menu.is-active .bar:nth-child(3) {
-    transform: translateY(-8px) rotateX(-45deg);
+    transform: translateY(-14px) rotateX(-45deg);
   }
   // carousel
   .headers {
@@ -1113,10 +1153,128 @@ color: #248275;
   }
 
   .main-btn {
-    width: 85%;
+    width: 45%;
     font-size: 1.4rem;
   }
+
+//home page mobile
+.service-home-text{
+
 }
+
+.service-card{
+
+  img{
+height: 12.5rem;
+
+  }
+}
+
+
+.pet-writing{
+  h1,h3{
+    width: 175%;
+  }
+
+  .main-btn{
+    margin-top: 12%;
+    right: 4.35rem;
+  }
+}
+
+.bottom-pet-area{
+
+    width: 115%;
+
+}
+
+.dog-btn{
+  width: 70%;
+  margin-left: 18%;
+}
+
+//commercial Page mobile
+
+.service-home-text{
+ h2{
+  font-size: 4rem;
+  position: relative;
+  right: 5rem;
+}
+
+.main-btn{
+  right: 4.3rem;
+}
+
+.bottom-commercial{
+
+}
+
+
+
+
+
+
+}
+
+
+
+//construction page mobile
+
+//about page mobile
+
+.image-top-section{
+  padding-bottom: 15rem;
+}
+
+.about-writing{
+  width: 60%;
+  position: relative;
+  right: 0;
+  margin-left: 35%;
+  margin-top: 10%;
+  height: 38rem;
+
+
+h2,h3{
+  position: relative;
+  top: 1rem;
+}
+
+}
+
+.pet-writing{
+
+.main-btn{
+  width: 70%;
+  margin-left: 18%;
+  margin-top: 15%; 
+}
+
+}
+
+//contact Page
+
+
+.inside-contact{
+
+  .main-btn{
+    width: 70%;
+  }
+}
+
+.btn-submit{
+width: 70%;
+}
+}
+
+
+
+
+
+
+
+
 @media (max-width:801px) {
   #navbar-logo img {
     width: 30%;
